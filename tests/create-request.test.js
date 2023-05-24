@@ -19,7 +19,7 @@ test('Test create-request', async ({ page }) => {
 
   await page.locator('.ant-picker').first().click();
 
-  await page.getByText('19', { exact: true }).click();
+  await page.getByText('29', { exact: true }).click();
 
   await page.locator('#requestReasonId').click();
 
@@ -31,7 +31,7 @@ test('Test create-request', async ({ page }) => {
 
   await page.locator('div:nth-child(2) > div > div:nth-child(2) > .ant-form-item > .ant-row > .ant-col > .ant-form-item-control-input > .ant-form-item-control-input-content > .ant-picker').click();
 
-  await page.getByRole('cell', { name: '23' }).getByText('23').click();
+  await page.getByRole('cell', { name: '29' }).getByText('29').click();
 
   await page.locator('#approver').click();
 
@@ -45,9 +45,7 @@ test('Test create-request', async ({ page }) => {
 
   await page.getByText('buihongvixu.zeronine@gmail.com').click();
 
-  await page.getByRole('button', { name: 'Submit' }).click();
-
-  await page.waitForResponse
+  await page.getByRole('button', { name: 'Gửi' }).click();
 
   await page.waitForTimeout(3000);
   });
