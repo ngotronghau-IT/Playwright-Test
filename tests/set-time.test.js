@@ -12,7 +12,7 @@ test('Test set-time', async ({ page }) => {
     await page.getByLabel('Làm việc tại nhà').check();
     await page.getByLabel('Nghỉ không lương').check();
     await page.locator('.ant-select-selection-overflow').nth(1).click();
-    await page.getByLabel('Đã duyệt').check();
+    await page.getByLabel('Đã duyệt').check() ;
     await page.getByLabel('Đã gửi').check();
   await page.waitForTimeout(3000);
 });
